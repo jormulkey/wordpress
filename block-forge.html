@@ -1,3 +1,5 @@
+<!-- START OF FILE block-forge_V4.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,7 @@
   <title>WP Landing Page Builder & Block Generator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300..700&family=JetBrains+Mono:wght=400;500&display=swap" rel="stylesheet">
   <style>
     :root, [data-theme="light"] {
       --text-xs:   clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
@@ -336,7 +338,7 @@
         </svg>
         <span class="logo-text">BlockForge</span>
       </a>
-      <span class="logo-badge">Visual Editor v3</span>
+      <span class="logo-badge">Local Biz v3</span>
     </div>
     
     <div class="topbar-right">
@@ -369,8 +371,8 @@
           <div class="preset-control">
             <span style="font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted);">Template:</span>
             <select id="preset-selector" class="field-input" style="width: auto; height: 32px; padding: 0 var(--space-2); font-size: var(--text-xs); border-color: var(--color-border);" onchange="applyPreset(this.value)">
-              <option value="startup">SaaS Startup (Default)</option>
-              <option value="agency">Bespoke Design Agency</option>
+              <option value="roofing">Apex Roofing Specialists (Roofing)</option>
+              <option value="hvac">BreezeAir HVAC & Plumbing (HVAC)</option>
             </select>
           </div>
 
@@ -471,8 +473,44 @@
         </div>
       </div>
 
+      <h4>🎨 Setting Theme Colors in WordPress</h4>
+      <p>Since this generator utilizes native WordPress core elements, you can easily alter colors to match your branding once imported:</p>
+      <div class="guide-step">
+        <div class="guide-step-num">A</div>
+        <div class="guide-step-content">
+          <p><strong>Using Global Site Styles:</strong> If using a Block Theme (e.g., Twenty Twenty-Four), open <strong>Appearance > Editor > Styles > Colors</strong> to update global palettes. All buttons and icons will sync automatically.</p>
+        </div>
+      </div>
+      <div class="guide-step">
+        <div class="guide-step-num">B</div>
+        <div class="guide-step-content">
+          <p><strong>Overriding Block Settings:</strong> While in the visual editor, select any Heading, Group, or Button, locate the <strong>Settings</strong> panel on the right sidebar, click on <strong>Color</strong>, and choose your preferred background or text colors from your active theme palette.</p>
+        </div>
+      </div>
+
+      <h4>🖼️ Uploading & Linking Your Custom Images</h4>
+      <p>To showcase your real projects, trucks, or local team, import your images to the media library first:</p>
+      <div class="guide-step">
+        <div class="guide-step-num">1</div>
+        <div class="guide-step-content">
+          <p>Within your WordPress dashboard, navigate to <strong>Media > Add New Media File</strong> and upload your files.</p>
+        </div>
+      </div>
+      <div class="guide-step">
+        <div class="guide-step-num">2</div>
+        <div class="guide-step-content">
+          <p>Click on the uploaded image to open its attachment details window, then click the <strong>"Copy URL to clipboard"</strong> button on the lower-right side.</p>
+        </div>
+      </div>
+      <div class="guide-step">
+        <div class="guide-step-num">3</div>
+        <div class="guide-step-content">
+          <p>Come back to this workspace, <strong>double-click the image</strong> you want to switch in the sandbox, paste the copied link, and confirm.</p>
+        </div>
+      </div>
+
       <div class="modal-note-block">
-        <p><strong>💡 Design Sync Note:</strong> We have embedded custom equal-height alignments and spacing variables directly into the generator payload. Pasted columns automatically inherit matching card dimensions regardless of content differences, aligning gracefully on your live theme pages.</p>
+        <p><strong>💡 Clean Code Guarantee:</strong> All pastings automatically strip out background formatting. This ensures your margins, text sizes, and column grid styles remain cleanly inherited no matter where you copy your custom drafts from.</p>
       </div>
     </div>
     <div class="modal-footer">
@@ -504,90 +542,90 @@
   let sectionData = {
     hero: {
       active: true,
-      badge: "Native Core Blocks",
-      title: "Transform Your Business Today",
-      sub: "Deploy pixel-perfect native Gutenberg pages without the bloat of visual builders.",
-      btn_text: "Get Started",
-      btn_link: "https://wordpress.org",
-      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+      badge: "Licensed Local Roofers",
+      title: "Protect Your Home With a Lifetime Roof",
+      sub: "Get premium roofing replacements, prompt leak repairs, and expert storm diagnostics from certified home exterior professionals.",
+      btn_text: "Request Free Estimate",
+      btn_link: "#contact",
+      img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
       align: "right"
     },
     main: {
       active: true,
-      title: "Modern, Bloat-Free Core Templates",
-      text: "Every component generated here relies purely on high-performance WordPress Core Blocks. No extra JS engines, no custom premium block plugins, and absolute support for full-site style sheets."
+      title: "No-Gimmick Quality & Honest Pricing",
+      text: "We believe in honest craft and clear communication. From our initial 21-point structural inspection to final cleanup, our local teams treat your property with respect. No high-pressure sales pitches—just premium materials installed to protect your family for decades."
     },
     services: {
       active: true,
-      title: "How We Help You Grow",
-      s1_title: "FSE-Friendly Design",
-      s1_text: "Native support for Twenty Twenty-Four style panels and theme editors.",
-      s1_img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80",
-      s2_title: "SEO Optimized Structure",
-      s2_text: "Lightweight semantics with nested h3 structures, maximizing page indexing scores.",
-      s2_img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80",
-      s3_title: "Lightning Page Speeds",
-      s3_text: "Zero static CSS generation. Pure core properties make your server run faster.",
-      s3_img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80"
+      title: "Our Local Roofing Solutions",
+      s1_title: "Roof Replacement",
+      s1_text: "Upgrade to storm-proof architectural shingle systems warrantied for up to 50 years against the elements.",
+      s1_img: "https://images.unsplash.com/photo-1518736346281-76873166a64a",
+      s2_title: "Emergency Leak Isolation",
+      s2_text: "Stop water in its tracks. Our quick response teams find and patch structural breaches before costs escalate.",
+      s2_img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80",
+      s3_title: "Hail Damage Repairs",
+      s3_text: "We specialize in navigating insurance reporting. Get exhaustive damage evaluations and direct assistance.",
+      s3_img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
     },
     testimonials: {
       active: true,
-      title: "Client Success Stories",
-      t1_quote: "The generated blocks matched our layout beautifully. Our site loading speeds rose over 40%.",
-      t1_name: "Jane Doe",
-      t1_role: "VP of Tech, Acme Corp",
-      t1_img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
-      t2_quote: "No subscription block platforms needed. Easy clean layouts mapped smoothly to core styling.",
-      t2_name: "Michael Foster",
-      t2_role: "Lead Designer, Studio X",
-      t2_img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80",
-      t3_quote: "Gutenberg block generation done cleanly. Extremely portable and effortless to customize.",
-      t3_name: "Elena Rostova",
-      t3_role: "Operations Dir, Global Tech",
-      t3_img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80"
+      title: "What Your Neighbors Say About Us",
+      t1_quote: "Had a massive storm leak in our attic. They arrived within hours, isolated the damage, and did a superb shingle repair. Highly professional crew!",
+      t1_name: "Robert K.",
+      t1_role: "Springfield Resident",
+      t1_img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80",
+      t2_quote: "The cleanest contractors we have ever dealt with. They cleared away every stray nail using a rolling magnet. Our brand new roof looks gorgeous.",
+      t2_name: "Linda M.",
+      t2_role: "Oak Ridge Homeowner",
+      t2_img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80",
+      t3_quote: "Excellent communication from quote to cleanup. No hidden charges. They replaced our entire asphalt roof in less than two full days.",
+      t3_name: "James D.",
+      t3_role: "Property Manager",
+      t3_img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80"
     },
     portfolio: {
       active: true,
-      title: "Our Portfolio Work",
-      img1: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80",
-      img2: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80",
-      img3: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80"
+      title: "Our Work in the Community",
+      img1: "https://images.unsplash.com/photo-1518736346281-76873166a64a?auto=format&fit=crop&w=600&q=80",
+      img2: "https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&w=600&q=80",
+      img3: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80"
     },
     cta: {
       active: true,
-      title: "Ready to Scale Your Page Creation?",
-      sub: "Create high converting block layouts directly on your WordPress workspace.",
-      btn_text: "Copy Template Code",
-      btn_link: "#copy-panel"
+      title: "Need an Expert Roof Inspection?",
+      sub: "Don't let a minor attic drip become a major structural expense. Book a completely free roof inspection today.",
+      btn_text: "Schedule Inspection Now",
+      btn_link: "#contact"
     },
     contact: {
       active: true,
-      title: "Let's Start Working Together",
-      address: "120 Third Avenue, Suite 400, Seattle, WA 98101",
-      phone: "(206) 555-0192",
-      email: "hello@yourdomain.com",
-      img: "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=600&q=80"
+      title: "Get in Touch Today",
+      address: "100 Roofing Way, Suite A, Springfield, IL 62701",
+      phone: "(555) 321-7663",
+      email: "service@apexroofing.com",
+      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
     }
   };
 
   const presets = {
-    startup: {
-      hero: { active: true, badge: "Native Core Blocks", title: "Transform Your Business Today", sub: "Deploy pixel-perfect native Gutenberg pages without the bloat of visual builders.", btn_text: "Get Started", btn_link: "https://wordpress.org", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80", align: "right" },
-      main: { active: true, title: "Modern, Bloat-Free Core Templates", text: "Every component generated here relies purely on high-performance WordPress Core Blocks. No extra JS engines, no custom premium block plugins, and absolute support for full-site style sheets." },
-      services: { active: true, title: "How We Help You Grow", s1_title: "FSE-Friendly Design", s1_text: "Native support for Twenty Twenty-Four style panels and theme editors.", s1_img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80", s2_title: "SEO Optimized Structure", s2_text: "Lightweight semantics with nested h3 structures, maximizing page indexing scores.", s2_img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80", s3_title: "Lightning Page Speeds", s3_text: "Zero static CSS generation. Pure core properties make your server run faster.", s3_img: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80" },
-      testimonials: { active: true, title: "Client Success Stories", t1_quote: "The generated blocks matched our layout beautifully. Our site loading speeds rose over 40%.", t1_name: "Jane Doe", t1_role: "VP of Tech, Acme Corp", t1_img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80", t2_quote: "No subscription block platforms needed. Easy clean layouts mapped smoothly to core styling.", t2_name: "Michael Foster", t2_role: "Lead Designer, Studio X", t2_img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80", t3_quote: "Gutenberg block generation done cleanly. Extremely portable and effortless to customize.", t3_name: "Elena Rostova", t3_role: "Operations Dir, Global Tech", t3_img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80" },
-      portfolio: { active: true, title: "Our Portfolio Work", img1: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80", img2: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80", img3: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80" },
-      cta: { active: true, title: "Ready to Scale Your Page Creation?", sub: "Create high converting block layouts directly on your WordPress workspace.", btn_text: "Copy Template Code", btn_link: "#copy-panel" },
-      contact: { active: true, title: "Let's Start Working Together", address: "120 Third Avenue, Suite 400, Seattle, WA 98101", phone: "(206) 555-0192", email: "hello@yourdomain.com", img: "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=600&q=80" }
+    roofing: {
+      hero: { active: true, badge: "Licensed Local Roofers", title: "Protect Your Home With a Lifetime Roof", sub: "Get premium roofing replacements, prompt leak repairs, and expert storm diagnostics from certified home exterior professionals.", btn_text: "Request Free Estimate", btn_link: "#contact", img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80", align: "right" },
+      main: { active: true, title: "No-Gimmick Quality & Honest Pricing", text: "We believe in honest craft and clear communication. From our initial 21-point structural inspection to final cleanup, our local teams treat your property with respect. No high-pressure sales pitches—just premium materials installed to protect your family for decades." },
+      services: { active: true, title: "Our Local Roofing Solutions", s1_title: "Full Shingle Roof Replacement", s1_text: "Upgrade to storm-proof architectural shingle systems warrantied for up to 50 years against the elements.", s1_img: "https://images.unsplash.com/photo-1518736346281-76873166a64a?auto=format&fit=crop&w=600&q=80", s2_title: "Emergency Leak Isolation", s2_text: "Stop water in its tracks. Our quick response teams find and patch structural breaches before costs escalate.", s2_img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80", s3_title: "Wind & Hail Damage Repairs", s3_text: "We specialize in navigating insurance reporting. Get exhaustive damage evaluations and direct assistance.", s3_img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" },
+      testimonials: { active: true, title: "What Your Neighbors Say About Us", t1_quote: "Had a massive storm leak in our attic. They arrived within hours, isolated the damage, and did a superb shingle repair. Highly professional crew!", t1_name: "Robert K.", t1_role: "Springfield Resident", t1_img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150&q=80", t2_quote: "The cleanest contractors we have ever dealt with. They cleared away every stray nail using a rolling magnet. Our brand new roof looks gorgeous.", t2_name: "Linda M.", t2_role: "Oak Ridge Homeowner", t2_img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80", t3_quote: "Excellent communication from quote to cleanup. No hidden charges. They replaced our entire asphalt roof in less than two full days.", t3_name: "James D.", t3_role: "Property Manager", t3_img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" },
+      portfolio: { active: true, title: "Our Work in the Community", img1: "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80", img2: "https://images.unsplash.com/photo-1635424824849-1b09bdcc55b1?auto=format&fit=crop&w=600&q=80", img3: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80" },
+      cta: { active: true, title: "Need an Expert Roof Inspection?", sub: "Don't let a minor attic drip become a major structural expense. Book a completely free roof inspection today.", btn_text: "Schedule Inspection Now", btn_link: "#contact" },
+      contact: { active: true, title: "Get in Touch Today", address: "100 Roofing Way, Suite A, Springfield, IL 62701", phone: "(555) 321-7663", email: "service@apexroofing.com", img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" }
     },
-    agency: {
-      hero: { active: true, badge: "Bespoke Digital Agency", title: "We Forge High-Performing Visual Brands", sub: "A highly dedicated modern agency delivering hyper-fast full-site block architectures that maximize conversions.", btn_text: "View Portfolio", btn_link: "#portfolio", img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80", align: "left" },
-      main: { active: true, title: "Bold Aesthetics, Smart Performance", text: "We skip the sluggish visual builder frameworks to offer lightweight custom block systems powered natively by optimized Gutenberg behaviors." },
-      services: { active: true, title: "Our Specialized Services", s1_title: "Identity & Branding", s1_text: "Strategic positioning, visual identity programs, and bespoke digital art directions for digital companies.", s1_img: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80", s2_title: "WordPress Native Systems", s2_text: "Custom high-speed block styles mapping naturally to universal themes without extra script payloads.", s2_img: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80", s3_title: "Core Performance SEO", s3_text: "Aggressive speed optimizations driving top Lighthouse score rankings and improved index parameters.", s3_img: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80" },
-      testimonials: { active: true, title: "Endorsements & Reviews", t1_quote: "BlockForge completely changed how we build and launch customer portals. Loading speeds rose immediately.", t1_name: "Sarah Jenkins", t1_role: "Creative Partner, Flux Design", t1_img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80", t2_quote: "Outstanding performance metrics. Using native block layouts makes site Hand-off a breeze.", t2_name: "Carlos Mendez", t2_role: "Senior Engineering Dir, DevCo", t2_img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&h=150&q=80", t3_quote: "Clean outputs, responsive layout templates, and flawless support integration. Highly recommended.", t3_name: "Anya Kovalenko", t3_role: "Founder, Bloom Digital", t3_img: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=150&h=150&q=80" },
-      portfolio: { active: true, title: "Featured Studio Work", img1: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80", img2: "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&w=600&q=80", img3: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" },
-      cta: { active: true, title: "Have a Custom Project in Mind?", sub: "Get in touch with us to design bespoke custom block properties tailored to your visual needs.", btn_text: "Connect With Our Team", btn_link: "mailto:agency@yourdomain.com" },
-      contact: { active: true, title: "Let's Construct Together", address: "512 Pine Street, Suite 200, Philadelphia, PA 19106", phone: "(215) 555-0144", email: "agency@yourdomain.com", img: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80" }
+    hvac: {
+      hero: { active: true, badge: "Licensed HVAC Specialists", title: "Stay Comfortable, Breathe Clean Air", sub: "Fast, reliable furnace installation, rapid air conditioning diagnostics, and plumbing solutions tailored to local property owners.", btn_text: "Schedule Repair Service", btn_link: "#contact", img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80", align: "right" },
+      main: { active: true, title: "Rapid Emergency Response Systems", text: "When your heating or cooling system fails, your home quickly becomes unlivable. Our service vans are fully stocked with advanced diagnostic gear and replacement components to repair most central issues on the very first visit." },
+      services: { active: true, title: "Our Home Comfort Services", s1_title: "AC Tune-ups & Diagnostics", s1_text: "Optimize cooling systems, recharge coolants, and restore peak efficiency to survive the peak summer heat.", s1_img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80", s2_title: "Heating Repair & Overhaul", s2_text: "Comprehensive checks of furnace exchangers, controls, and modern thermostat integrations to ensure safety.", s2_img: "https://images.unsplash.com/photo-1615309662243-70f6df917b59?auto=format&fit=crop&w=600&q=80", s3_title: "Emergency Plumbing Care", s3_text: "Rapid solutions for water heater failures, critical line clearings, and leaking structural pipes.", s3_img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" },
+      testimonials: { active: true, title: "Hear From Our Happy Customers", t1_quote: "Our AC gave out on a 98-degree afternoon. They came out within two hours, quickly identified the blown capacitor, and had our home cool again.", t1_name: "Sarah T.", t1_role: "Suburban Family Homeowner", t1_img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80", t2_quote: "Very polite techs who explained every charge clearly. We saved 20% on our energy bills after they installed our new modern heat pump.", t2_name: "Michael G.", t2_role: "Homeowner", t2_img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80", t3_quote: "Fantastic maintenance program. They clean and service our furnace every autumn and our central air conditioner every spring. Total peace of mind.", t3_name: "Emma W.", t3_role: "Bungalow Owner", t3_img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80" },
+      portfolio: { active: true, title: "Modern Systems Installed", img1: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80", img2: "https://images.unsplash.com/photo-1718203862467-c33159fdc504?auto=format&fit=crop&w=600&q=80", img3: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" },
+      cta: { active: true, title: "Is Your Comfort System Acting Up?", sub: "Call our friendly dispatch center or schedule an experienced technician visit online in seconds.", btn_text: "Schedule Service Appointment", btn_link: "#contact" },
+      contact: { active: true, title: "Contact Your Comfort Team", address: "500 Airway Boulevard, Springfield, IL 62703", phone: "(555) 987-6543", email: "comfort@breezeairhvac.com", img: "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=600&q=80" }
     }
   };
 
@@ -615,12 +653,12 @@
     
     const titleMap = {
       hero: "Hero Banner",
-      main: "Story / Intro",
-      services: "Services Showcase",
-      testimonials: "Client Feedback",
-      portfolio: "Portfolio Showcase",
+      main: "About & Mission",
+      services: "Services Provided",
+      testimonials: "Client Success Stories",
+      portfolio: "Recent Local Jobs",
       cta: "Call To Action",
-      contact: "Contact & Location"
+      contact: "Get Free Quote"
     };
 
     sectionsOrder.forEach((secId, index) => {
@@ -680,6 +718,7 @@
     }
   }
 
+  // Pure layout order reassembly array indices swaps
   function moveSectionDown(secId) {
     const idx = sectionsOrder.indexOf(secId);
     if (idx !== -1 && idx < sectionsOrder.length - 1) {
@@ -754,13 +793,13 @@
   // ----------------------------------------------------
 
   function generateHero(d, isIframe = false) {
-    const title = d.title || "Transform Your Business Today";
+    const title = d.title || "Transform Your Business";
     const sub = d.sub || "";
     const btnText = d.btn_text || "Get Started";
     const btnLink = d.btn_link || "#";
     const imgUrl = d.img || "";
     const align = d.align || "right";
-    const badgeText = d.badge || "Native Core Blocks";
+    const badgeText = d.badge || "Local Specialists";
 
     const editAttr = (key) => isIframe ? `contenteditable="true" data-section="hero" data-key="${key}"` : '';
     const dblClickAttr = (type, key, linkKey = '') => isIframe ? `data-dbl-type="${type}" data-section="hero" data-key="${key}" ${linkKey ? `data-link-key="${linkKey}"` : ''}` : '';
@@ -1016,13 +1055,75 @@ ${itemsBlock}</div>
   function getInlineCSSBlock() {
     return `<!-- wp:html -->
 <style>
+  /* Core layout design variables */
+  :root {
+    --bf-primary: #026a71;
+    --bf-primary-hover: #0a4f54;
+    --bf-primary-highlight: #d4e6e5;
+    --bf-text: #1d1b16;
+    --bf-text-muted: #69665d;
+    --bf-bg-light: #faf9f6;
+    --bf-divider: #e5e2da;
+  }
+
+  /* Spacious Section Padding layout standard */
+  .hero-section, .intro-section, .services-section, .testimonials-section, .portfolio-section, .cta-section, .contact-section {
+    padding-top: clamp(3rem, 5.5vw, 5rem) !important;
+    padding-bottom: clamp(3rem, 5.5vw, 5rem) !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+  }
+
+  /* Wide and Full block alignment layout support */
+  .alignwide {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .alignfull {
+    width: auto !important;
+  }
+
+  /* Background values synchronizing look and feel on WordPress */
+  .hero-section { background-color: #ffffff !important; }
+  .intro-section {
+    background-color: var(--bf-bg-light) !important;
+    border-top: 1px solid var(--bf-divider) !important;
+    border-bottom: 1px solid var(--bf-divider) !important;
+    text-align: center !important;
+  }
+  .intro-section p { max-width: 800px !important; margin-left: auto !important; margin-right: auto !important; }
+  .services-section { background-color: #ffffff !important; }
+  .testimonials-section {
+    background-color: var(--bf-bg-light) !important;
+    border-top: 1px solid var(--bf-divider) !important;
+    border-bottom: 1px solid var(--bf-divider) !important;
+  }
+  .portfolio-section { background-color: #ffffff !important; }
+  .cta-section {
+    background-color: #1d1b16 !important;
+    color: #ffffff !important;
+    text-align: center !important;
+  }
+  .cta-section h2 { color: #ffffff !important; }
+  .cta-section p { color: #a7a398 !important; }
+  .cta-section .wp-block-button__link { background-color: #ffffff !important; color: #1d1b16 !important; }
+  .cta-section .wp-block-button__link:hover { background-color: #faf9f6 !important; }
+  .contact-section { background-color: #ffffff !important; }
+
   /* Standard structural columns layout styles */
   @media (min-width: 782px) {
     .wp-block-columns {
       display: flex !important;
+      flex-wrap: nowrap !important;
       align-items: stretch !important;
+      gap: 2.5rem !important;
     }
     .wp-block-column {
+      flex: 1 1 0% !important;
+      min-width: 0 !important;
       display: flex !important;
       flex-direction: column !important;
       height: 100% !important;
@@ -1066,13 +1167,14 @@ ${itemsBlock}</div>
     flex-grow: 1 !important;
   }
 
-  /* Testimonials Card elements styling */
+  /* Testimonials Card elements styling - strictly locked proportions */
   .testimonial-card {
     background: #ffffff !important;
     border: 1px solid #e5e2da !important;
     border-radius: 12px !important;
     padding: 2.5rem !important;
     box-shadow: 0 4px 12px rgba(29, 27, 22, 0.02) !important;
+    flex-grow: 1 !important;
   }
   .testimonial-quote {
     font-size: 1.05rem !important;
@@ -1166,6 +1268,19 @@ ${itemsBlock}</div>
     border-radius: 9999px !important;
     margin-bottom: 1.5rem !important;
   }
+
+  /* Centered CTA Section button styling override */
+  .cta-section .wp-block-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .cta-section .wp-block-button {
+    margin: 0 auto !important;
+  }
 </style>
 <!-- /wp:html -->\n\n`;
   }
@@ -1246,7 +1361,15 @@ ${itemsBlock}</div>
       .alignwide { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 2rem; padding-right: 2rem; }
       .alignfull { width: 100%; margin-left: auto; margin-right: auto; }
 
-      .wp-block-group { padding: 5rem 2rem; position: relative; }
+      /* Visual spacing rule applied directly inside visually simulated sections */
+      .intro-section, .services-section, .testimonials-section, .portfolio-section, .cta-section, .contact-section {
+        padding-top: clamp(6rem, 11vw, 10rem) !important;
+        padding-bottom: clamp(6rem, 11vw, 10rem) !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        box-sizing: border-box;
+        position: relative;
+      }
       
       h1, h2, h3, h4 { margin-top: 0; line-height: 1.2; color: var(--color-text); font-weight: 700; }
       h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
@@ -1257,15 +1380,14 @@ ${itemsBlock}</div>
       a:hover { text-decoration: underline; }
 
       .wp-block-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
-      .wp-block-buttons[style*="justify-content:center"] { justify-content: center; }
       .wp-block-button__link {
         display: inline-block; background-color: var(--color-primary); color: #ffffff !important;
         padding: 0.85rem 2rem; text-decoration: none !important; font-weight: 600; font-size: 0.95rem;
-        border-radius: var(--radius-md); transition: background-color 150ms ease;
+        border-radius: var(--radius-md); transition: background-color 150ms ease, color 150ms ease, outline 150ms ease;
       }
       .wp-block-button__link:hover { background-color: var(--color-primary-hover); }
 
-      .hero-section { background-color: #ffffff; padding-top: 6rem; padding-bottom: 6rem; }
+      .hero-section { background-color: #ffffff; }
       .hero-section .wp-block-columns { align-items: center; gap: 4rem; }
       .hero-section p { font-size: 1.15rem; line-height: 1.6; margin-bottom: 2rem; }
 
@@ -1288,12 +1410,23 @@ ${itemsBlock}</div>
       .portfolio-section h2 { margin-bottom: 3.5rem; }
 
       .cta-section {
-        background-color: #1d1b16; color: #ffffff !important; text-align: center; padding-top: 6.5rem; padding-bottom: 6.5rem;
+        background-color: #1d1b16; color: #ffffff !important; text-align: center;
       }
       .cta-section h2 { color: #ffffff; }
       .cta-section p { color: #a7a398; font-size: 1.15rem; max-width: 650px; margin-left: auto; margin-right: auto; margin-bottom: 2rem; }
       .cta-section .wp-block-button__link { background-color: #ffffff; color: #1d1b16 !important; }
       .cta-section .wp-block-button__link:hover { background-color: #faf9f6; }
+
+      /* Rigid centered CTA buttons override */
+      .cta-section .wp-block-buttons {
+        display: flex !important;
+        justify-content: center !important;
+        text-align: center !important;
+        width: 100% !important;
+      }
+      .cta-section .wp-block-button {
+        margin: 0 auto !important;
+      }
 
       .contact-section { background-color: #ffffff; }
       .contact-section .wp-block-columns { align-items: center; gap: 4rem; }
@@ -1321,6 +1454,22 @@ ${itemsBlock}</div>
         background: rgba(2, 106, 113, 0.06);
       }
       
+      /* Distinct high-contrast styles while editing buttons */
+      .wp-block-button__link[contenteditable="true"]:focus {
+        outline: 3px solid #f59e0b !important; /* Prominent Amber Outline */
+        outline-offset: 3px !important;
+        background-color: #ffffff !important;
+        color: #026a71 !important; /* Easy to read primary color */
+        text-shadow: none !important;
+      }
+      
+      /* Inverted high-contrast styles for dark background CTA button */
+      .cta-section .wp-block-button__link[contenteditable="true"]:focus {
+        background-color: #026a71 !important;
+        color: #ffffff !important;
+        outline: 3px solid #f59e0b !important;
+      }
+
       [data-dbl-type="image"], [data-dbl-type="link"] {
         cursor: pointer;
         transition: outline 0.15s ease, filter 0.15s ease;
@@ -1332,9 +1481,19 @@ ${itemsBlock}</div>
         outline: 2px dashed #026a71;
       }
 
+      /* Desktop Locked Equal Columns Constraint preventing text smushing */
+      @media (min-width: 782px) {
+        .wp-block-columns { display: flex !important; flex-wrap: nowrap !important; gap: 2.5rem !important; }
+        .wp-block-column { 
+          flex: 1 1 0% !important; 
+          min-width: 0 !important; 
+          display: flex !important; 
+          flex-direction: column !important; 
+        }
+      }
+
       @media (max-width: 768px) {
         .wp-block-columns { flex-direction: column !important; gap: 2rem !important; }
-        .wp-block-group { padding: 4rem 1.25rem; }
         .hero-section, .contact-section { padding-top: 4rem; padding-bottom: 4rem; }
         .hero-section .wp-block-columns, .contact-section .wp-block-columns { gap: 2rem; }
       }
@@ -1345,6 +1504,28 @@ ${itemsBlock}</div>
       <script>
         // Track visual keystrokes instantly to coordinate clean Code Output compiles
         document.body.addEventListener('input', (e) => {
+          const target = e.target;
+          if (target.hasAttribute('data-section') && target.hasAttribute('data-key')) {
+            const section = target.getAttribute('data-section');
+            const key = target.getAttribute('data-key');
+            window.parent.updateStateValue(section, key, target.innerText || target.textContent);
+          }
+        });
+
+        // Intercept formatting paste events to enforce styling-free raw data imports
+        document.body.addEventListener('paste', (e) => {
+          e.preventDefault();
+          const text = (e.clipboardData || window.clipboardData).getData('text/plain');
+          
+          if (document.queryCommandSupported('insertText')) {
+            document.execCommand('insertText', false, text);
+          } else {
+            const selection = window.getSelection();
+            if (!selection.rangeCount) return;
+            selection.deleteFromDocument();
+            selection.getRangeAt(0).insertNode(document.createTextNode(text));
+          }
+
           const target = e.target;
           if (target.hasAttribute('data-section') && target.hasAttribute('data-key')) {
             const section = target.getAttribute('data-section');
